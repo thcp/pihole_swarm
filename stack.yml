@@ -17,6 +17,7 @@ services:
       VIRTUAL_HOST: "${DOMAIN}"
       VIRTUAL_PORT: 80
       WEBPASSWORD: "${PASSWD}"
+      TZ: "${TIMEZONE}"
     extra_hosts:
       - "${DOMAIN}:${IPADDR}"
     volumes:
