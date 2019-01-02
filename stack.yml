@@ -21,6 +21,9 @@ services:
       - "${DOMAIN}:${IPADDR}"
     volumes:
       - pihole:/etc/pihole
+    deploy:
+      mode: replicated
+      replicas: 2
 volumes:
     pihole:
       driver: local
