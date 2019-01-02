@@ -16,6 +16,7 @@ services:
       PROXY_LOCATION: pihole
       VIRTUAL_HOST: "${DOMAIN}"
       VIRTUAL_PORT: 80
+      WEBPASSWORD: "${PASSWD}"
     extra_hosts:
       - "${DOMAIN}:${IPADDR}"
     volumes:
