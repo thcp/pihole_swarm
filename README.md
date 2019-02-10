@@ -1,5 +1,5 @@
 # ph_swarm_nfs
-pihole for swarm and nfs mount for raspberry
+pihole for swarm
 
 ## Usage
 Copy `.env.example` to `.env`, insert your values and execute `make deploy`
